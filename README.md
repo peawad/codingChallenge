@@ -1,7 +1,6 @@
-# codingChallenge
-## by Jordan Divina - jed6sn
+# codingChallenge by Jordan Divina
 
-A RESTful API for an address book with an Elasticsearch data store.
+A RESTful API for an address book with an Elasticsearch data store. The specifications can be shown in the shared googleDoc.
 
 # Please read here:
 - - - - - - - - - - - - - - - - - - - - - - - - - 
