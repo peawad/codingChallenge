@@ -1,9 +1,8 @@
-# codingChallenge by Jordan Divina [Documentation and Thoughts]
+# Challenge by Jordan Divina [Documentation and Thoughts]
 
-A RESTful API for an address book with an elasticsearch data store. The specifications can be shown in the shared googleDoc provided by company
+A RESTful API for an address book with an elasticSearch data store in two days. The specifications can be shown in the shared googleDoc provided by company. I approximately spent around five hours studying documentation, watching youTube videos, and googling. Then, I approximately spent around three hours of serious coding...
 
 ## Please read here:
-- - - - - - - - - - - - - - - - - - - - - - - - - 
 
 I'll be using Flask/Flask_restful to create this RESTful API
 I'll also use the ElasticSearch as directed in the instructions
@@ -23,8 +22,19 @@ You will then be prompted with an input. Place your specific port number. If it 
 
 Now, you can run all get, post, put, and delete in your browser!
 
-Also, if you want to run test.py, then run it the same as main.py. However, make sure that you run it when the elasticSearch database is empty
+Also, if you want to run test.py, then run it the same as main.py. However, make sure that you run it when the elasticSearch database is empty! You can empty the database by just restarting the main.py file!
 
 ## Creating the data model
 
-For purposes of the challenge, I was tasked in creating a data model for an address book. Therefore, in order to keep it simple, a **contact** consists of only a name, a number, an address, and a birthday. It would be best to keep things simple for someone's first attempt in creating a RESTFUL API. Please note, that birthday is kept as a string. This is not best practice, and I hope to change this for later iterations.
+For purposes of the challenge, I was tasked in creating a data model for an address book. Therefore, in order to keep it simple, a **contact** consists of only a name, a number, an address, and a birthday. It would be best to keep things simple for someone's first attempt in creating a RESTFUL API. Please note, that birthday is kept as a string. This is not best practice, and I hope to change this for later iterations. Also, the number can only contain 10 or 11 digits, and it must be written as XXXXXXXXXX. In future versions, I hope to add a more elegant way to consider numbers of all formats and with international country ID's.
+
+## Known issues and possible fixes in the future
+
+- Need a more elegant number validator
+- Import a datetime module and replace the string "birthday" with a datetime object
+- Need to fix pageSize and pagination (mainly because I'm not fully sure what it means D:)
+- Need to do more work on queries in /contact
+- return something other than strings, or maybe return nothing at all?
+- Figure out update rather than create/delete for put
+- General optimization strategies for plugins
+- Learn more about the options in elasticSearch and how it can help me; I'm still uncertain about doc_type...
