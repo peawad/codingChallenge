@@ -38,3 +38,13 @@ For purposes of the challenge, I was tasked in creating a data model for an addr
 - Figure out update rather than create/delete for put
 - General optimization strategies for plugins
 - Learn more about the options in elasticSearch and how it can help me; I'm still uncertain about doc_type...
+
+## Ways to test queries in get /contact
+
+```
+http://localhost:5000/contact?pageSize=10&page=5&query={ "query": { "query_string" : { "query" : "(Jason)", "fields": ["name"]} } } 
+```
+
+```
+http://localhost:5000/contact?pageSize=10&page=5&query=none
+```
