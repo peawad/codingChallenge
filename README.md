@@ -32,9 +32,9 @@ For purposes of the challenge, I was tasked in creating a data model for an addr
 
 - Need a more elegant number validator
 - Import a datetime module and replace the string "birthday" with a datetime object
-- Need to fix pageSize and pagination (mainly because I'm not fully sure what it means D:)
+- Need to fix pageSize and pagination
 - Need to do more work on queries in /contact
-- return something other than strings, or maybe return nothing at all?
+- return something other than strings
 - Figure out update rather than create/delete for put
 - General optimization strategies for plugins
 - Learn more about the options in elasticSearch and how it can help me; I'm still uncertain about doc_type...
