@@ -20,7 +20,7 @@ Please download or clone the repository above. Before we begin, you will have to
 
 You will then be prompted with an input. Place your specific port number. If it successfully connects, then you are good! However, if it fails (or you misstyped), you will be exited out the program. By default, if you just press enter, then it will default to the normal 9200 port for elasticSearch. However, I do not allow for the flask port to be changed!
 
-Now, you can run all get, post, put, and delete in your browser!
+Now, you can run all get, post, put, and delete in your browser or terminal!
 
 Also, if you want to run test.py, then run it the same as main.py. However, make sure that you run it when the elasticSearch database is empty! You can empty the database by just restarting the main.py file!
 
