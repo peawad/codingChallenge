@@ -41,10 +41,11 @@ For purposes of the challenge, I was tasked in creating a data model for an addr
 
 ## Ways to test queries in get /contact
 
+If you have a person named Jason in your contact book...
 ```
 http://localhost:5000/contact?pageSize=10&page=5&query={ "query": { "query_string" : { "query" : "(Jason)", "fields": ["name"]} } } 
 ```
-
+If you want everyone in your contacts...
 ```
 http://localhost:5000/contact?pageSize=10&page=5&query=none
 ```
