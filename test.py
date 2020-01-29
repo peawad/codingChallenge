@@ -1,8 +1,12 @@
+#Jordan Divina - Tuesday, January 28 2020
+#code for testing purposes
+
 import requests
 import unittest
 
 #Make sure to run these tests with a completely empty elasticSearch
 #These tests are to ensure proper storage and retreival aspects of code
+#In the code, I made the document ID the name because that has to be unique I believe
 
 URL = "http://localhost:5000/contact"
 sampleQuery = '{"name": "Jackson","number": 1234567890,"address": "notHere","birthday": "12/12/2020"}'
@@ -75,7 +79,7 @@ class contactWithName(unittest.TestCase):
 		data = x.json()
 		self.assertEqual(data, "Name already exists in Address book. Did you maybe want to change it?")
 
-	#It seems a bit circular to repeat this code...
+	#Repeating the code from above
 	def test_postNew(self):
 		coolQuery = '{"name": "Jason","number": 1234567890,"address": "Here","birthday": "11/11/2010"}'
 		requests.post(URL, coolQuery);
@@ -85,7 +89,6 @@ class contactWithName(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
 
 
 
