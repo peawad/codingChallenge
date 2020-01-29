@@ -1,15 +1,19 @@
 # codingChallenge by Jordan Divina
 
-A RESTful API for an address book with an Elasticsearch data store. The specifications can be shown in the shared googleDoc.
+A RESTful API for an address book with an Elasticsearch data store. The specifications can be shown in the shared googleDoc provided by company
 
 # Please read here:
 - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 I'll be using Flask/Flask_restful to create this RESTful API
-
 I'll also use the ElasticSearch as directed in the instructions
 
-- - - - - - - - - - - - - - - - - - - - - - - - - 
-To begin this assignment, I will want to connect to ElasticSearch using the documentation examples. At the beginning, I'll ask the user for a port number. By default, the port number will be 9200. If the user inputs a string, like "tacocat",  or a bad port number, then the program will immediately exit out.
+Python: 3.6.8
+elasticSearch: 7.5.2
+Flask: 1.1.1
+Using latest version of Flask Restful
+Using latest version of Python elasticSearch for 7.5.2
+Also, using request for testing purposes in test.py
 
-After we create the connection to the elasticSearch, we will create an index called "address". This is where the database for elasticSearch is held. By default, I do not place anything into the index address.
+- - - - - - - - - - - - - - - - - - - - - - - - - 
+
