@@ -19,6 +19,10 @@ import sys
 # ***-***-**** or (***) *** **** using add on re
 
 def isValid(s):
+	
+	if s < 0:
+		return False
+
 	digits = len(str(s))
 	if digits == 10 or digits == 11:
 		return True
@@ -89,6 +93,15 @@ class contact(Resource):
 		parser.add_argument('page', type = int)
 		parser.add_argument('query', type = str)
 		args = parser.parse_args()
+
+		#More edge cases
+		#Wil throw error message if pageSize or page were none
+		#This is just to make sure
+		if args['pageSize'] <= 0:
+			args['pageSize'] = 10;
+
+		if args['page'] <= 0:
+			args['page'] = 5;	
 
 		#This is for if there exists no query!
 		#Very confused about the pageSize and page - I'll figure that out later if I have time
@@ -215,3 +228,4 @@ if __name__ == '__main__':
 
 	#Then run the App!
 	app.run(debug=False)
+	
