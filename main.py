@@ -148,7 +148,7 @@ class contact(Resource):
 			return final
 
 	#Creating the post for Contact endpoint
-	#I'll return a print statement...
+	#I'll return a string...
 
 	def post(self):
 		forumResults = request.get_json(force=True);
